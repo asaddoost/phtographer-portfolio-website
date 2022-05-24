@@ -1,0 +1,123 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    font-family: 'Cinzel', serif;
+    color: rgb(48, 48, 48);
+    font-weight: 200;
+    background: rgb(181, 181, 181);
+    background: linear-gradient(135deg, rgb(216, 216, 216) 0%, rgb(150, 150, 150) 100%);
+    
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .6s ease-in-out;
+}
+
+a:hover {
+    color: #444;
+    
+}
+
+img {
+    object-fit: cover;
+}
+
+/* background clip */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(48,48,48);
+    background: linear-gradient(157deg, rgba(48,48,48,1) 0%, rgba(252,252,252,1) 100%);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.intro-left {
+    position: fixed;
+    height: 100vh;
+    background: url('../img/side-1.jpg') no-repeat center center/cover;
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .intro-left {
+        position: relative;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .right {
+        position: relative;
+        width: 100%;
+    }
+    
+    .hide {
+        display: none;
+    }
+
+}
+
+
+.projects img {
+    transition: all .4s ease-in-out;
+    transform: scale(1);
+}
+.projects img:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(1.09);
+    z-index: 100;
+}
+
+
+.card {
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(157deg, rgb(216, 216, 216) 0%, rgb(150, 150, 150) 100%);
+}
+
+.form-control {
+    background-color: rgb(147, 147, 147);
+}
+.form-control:focus {
+    background-color: rgb(147, 147, 147);
+}
+
+::selection {
+    background-color: rgb(58, 58, 58);
+    color: rgb(177, 177, 177);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+    background:rgb(62, 62, 62);
+     width: .6rem;
+     border-radius: .5rem;
+     cursor: pointer;
+     
+}
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(170deg,
+    rgb(125, 125, 125) 10%,
+     rgb(111, 111, 111) 170%);
+     border-radius: .4rem;
+     
+}
+
+
