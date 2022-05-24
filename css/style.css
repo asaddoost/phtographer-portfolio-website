@@ -74,6 +74,10 @@ img {
 
 }
 
+.border {
+    border: 2px solid red;
+}
+
 
 .projects img {
     transition: all .4s ease-in-out;
